@@ -1,0 +1,98 @@
+#page_4 .content{
+    font-family: Arial, sans-serif;
+}
+#page_4 table {
+    /* width: 95%; */
+    width: 1800px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-collapse: collapse;
+    font-family:fantasy;
+    background-color: #f4f4f4;
+}
+
+#page_4 table, #page_4 td, #page_4 th {
+    border: 1px solid #ddd; 
+    height: 66px;
+}
+
+#page_4 th {
+    color: white; /* 表头文字颜色 */
+}
+
+#page_4 td {
+    text-align: center;
+    color: rgb(27, 123, 165);
+    background-image: white;
+}
+
+
+
+.menu-container {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    list-style:none;
+    padding: 10px;
+    font-family: fantasy;
+    font-size: 0.5em;
+    margin: auto;  
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    padding: auto;
+    margin: auto;
+    cursor: pointer;
+}
+.content2 {
+    margin-top: 10px;
+    font-size: 0.2em;
+    margin: auto;
+    padding: auto;
+}
+
+.content-item {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: auto;
+    padding: auto;
+}
+
+.content-item:first-child {
+    display: block; /* 默认显示第一个内容区域 */
+}
+
+
+
+
+#page_4 .dinosaur {
+    font-size: 42px;
+    color: #4B0082; 
+    text-align: right; 
+    margin: 20px 0; 
+    line-height: 1.5; 
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+    color: rgb(10, 121, 116);
+}
+
+a::after{
+    color: azure;
+}
+.menu-text:hover, .menu-text:active {
+    text-decoration: underline;
+    color: #ff4500; 
+}
+

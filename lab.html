@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单示例</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-container">
+        <ul class="menu">
+            <li class="menu-item" data-content="home">首页</li>
+            <li class="menu-item" data-content="services">服务</li>
+            <li class="menu-item" data-content="about">关于我们</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="home" class="content-item">
+            <h2>首页</h2>
+            <p>欢迎来到首页，这里是我们的主要内容。</p>
+        </div>
+        <div id="services" class="content-item">
+            <h2>服务</h2>
+            <p>我们提供的服务包括...</p>
+        </div>
+        <div id="about" class="content-item">
+            <h2>关于我们</h2>
+            <p>了解更多关于我们的信息。</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const contentToShow = this.getAttribute('data-content');
+                document.querySelectorAll('.content-item').forEach(content => {
+                    if(content.id === contentToShow) {
+                        content.style.display = 'block';
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+#page_1 .content{  
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    width:16.3rem;
+    height:6rem
+}
+#page_1 .slogan{
+    width:9.64rem;
+    height:2.69rem;
+    background:url(https://party.res.netease.com/pc/gw/20230509182436/img/slogan2_c361c551.png);
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    position:relative
+}
+
+#page_1 .nie-download{
+    width:4.6rem;
+    height:1.27rem;
+    margin:.3rem 0 .16rem;
+    -webkit-box-pack:start;
+    -moz-box-pack:start;
+    box-pack:start
+}
+#page_1 .nie-download,#page_1 .qrcode_box{
+    display:-webkit-box;
+    display:-moz-box;
+    display:box
+}
